@@ -1,0 +1,47 @@
+<h1 mat-dialog-title>Submit-Portal </h1>
+<div mat-dialog-content>
+<form [formGroup]="submitForm">
+    <mat-form-field hintLabel="Choose Any one Member" appearance="outline">
+        <mat-label>name</mat-label>
+    <mat-select formControlName="name"  placeholder="Select the member">
+        <mat-option  *ngIf="regs1" [value]="regs1">{{regs1}}</mat-option>
+        <mat-option *ngIf="regs2" [value]="regs2">{{regs2}}</mat-option>
+        <mat-option *ngIf="regs3" [value]="regs3">{{regs3}}</mat-option>
+      </mat-select>
+      <mat-error>Please Choose One Member</mat-error>
+      </mat-form-field>
+      <mat-form-field hintLabel="Choose Appropriate Member DOB " appearance="outline">
+        <mat-label>DOB</mat-label>
+    <mat-select formControlName="dob" placeholder="Select the member">
+        <mat-option *ngIf="regs4" [value]="regs4">{{regs4 | date}}</mat-option>
+        <mat-option *ngIf="regs5" [value]="regs5">{{regs5 | date}}</mat-option>
+        <mat-option *ngIf="regs6" [value]="regs6">{{regs6 | date}}</mat-option>
+      </mat-select>
+      <mat-error >Please Choose Appropriate Member DOB</mat-error>
+      </mat-form-field>
+      <mat-form-field  hintLabel="Choose correct admission date" appearance="outline">
+        <mat-label>Choose dateOfAdmission</mat-label>
+        <input formControlName="dateOfAdmission"  matInput [matDatepicker]="picker4">
+        <mat-error >Please Choose correct Admission Date</mat-error>
+        <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
+        <mat-datepicker #picker4></mat-datepicker>
+      </mat-form-field>
+  <mat-form-field hintLabel="Choose correct Date of Discharge" appearance="outline">
+    <mat-label>Choose Date of Discharge</mat-label>
+    <input formControlName="dateOfDischarge"  matInput [matDatepicker]="picker5">
+    <mat-error >Please Choose correct Date of Discharge</mat-error>
+    <mat-datepicker-toggle matSuffix [for]="picker5"></mat-datepicker-toggle>
+    <mat-datepicker #picker5></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field hintLabel="Enter the Correct billAmount "  appearance="outline">
+    <mat-label>Total Bill Amount</mat-label>
+  <input formControlName="billAmount" type="number" matInput placeholder="Enter the Total Amount">
+  <mat-error >Please Enter the billAmount</mat-error>
+  </mat-form-field>
+
+</form>
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button style="margin-left: 8px;" mat-raised-button color="primary" [disabled]="submitForm.invalid" (click)="claimSubmit()" >Submit</button>
+</div>

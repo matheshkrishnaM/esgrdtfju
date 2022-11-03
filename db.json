@@ -1,0 +1,118 @@
+{
+  "registeration": [
+    {
+      "name": "maddy",
+      "emailId": "matheshkrishna@gmail.com",
+      "dob": "1950-02-07T18:30:00.000Z",
+      "address": "22,pillayar kovil street",
+      "panNumber": "123456789012",
+      "contactNumber": 9876543210,
+      "state": "11",
+      "country": "2",
+      "dependName1": "muthu",
+      "dependName2": "manvili",
+      "dependDOB1": "1969-06-09T18:30:00.000Z",
+      "dependDOB2": "1970-02-03T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "name": "HARI",
+      "emailId": "mahdbca@gmail.com",
+      "dob": "1973-02-06T18:30:00.000Z",
+      "address": "sdafzxghhj",
+      "panNumber": "123456789012",
+      "contactNumber": 9876543288,
+      "state": "11",
+      "country": "2",
+      "dependName1": "abran",
+      "dependName2": "haran",
+      "dependDOB1": "1977-06-06T18:30:00.000Z",
+      "dependDOB2": "1954-11-10T18:30:00.000Z",
+      "id": 2
+    }
+  ],
+  "claim": [
+    {
+      "submitName": {
+        "name": "maddy",
+        "emailId": "matheshkrishna@gmail.com",
+        "dob": "1950-02-07T18:30:00.000Z",
+        "address": "22,pillayar kovil street",
+        "panNumber": "123456789012",
+        "contactNumber": 9876543210,
+        "state": "11",
+        "country": "2",
+        "dependName1": "muthu",
+        "dependName2": "manvili",
+        "dependDOB1": "1969-06-09T18:30:00.000Z",
+        "dependDOB2": "1970-02-03T18:30:00.000Z",
+        "id": 1
+      },
+      "submitDOB": {
+        "name": "maddy",
+        "emailId": "matheshkrishna@gmail.com",
+        "dob": "1950-02-07T18:30:00.000Z",
+        "address": "22,pillayar kovil street",
+        "panNumber": "123456789012",
+        "contactNumber": 9876543210,
+        "state": "11",
+        "country": "2",
+        "dependName1": "muthu",
+        "dependName2": "manvili",
+        "dependDOB1": "1969-06-09T18:30:00.000Z",
+        "dependDOB2": "1970-02-03T18:30:00.000Z",
+        "id": 1
+      },
+      "dateOfAdmission": "2022-09-21T18:30:00.000Z",
+      "dateOfDischarge": "2022-10-02T18:30:00.000Z",
+      "Amount": 200000,
+      "id": 1
+    },
+    {
+      "submitName": {
+        "name": "HARI",
+        "emailId": "mahdbca@gmail.com",
+        "dob": "1973-02-06T18:30:00.000Z",
+        "address": "sdafzxghhj",
+        "panNumber": "123456789012",
+        "contactNumber": 9876543288,
+        "state": "11",
+        "country": "2",
+        "dependName1": "abran",
+        "dependName2": "haran",
+        "dependDOB1": "1977-06-06T18:30:00.000Z",
+        "dependDOB2": "1954-11-10T18:30:00.000Z",
+        "id": 2
+      },
+      "submitDOB": {
+        "name": "HARI",
+        "emailId": "mahdbca@gmail.com",
+        "dob": "1973-02-06T18:30:00.000Z",
+        "address": "sdafzxghhj",
+        "panNumber": "123456789012",
+        "contactNumber": 9876543288,
+        "state": "11",
+        "country": "2",
+        "dependName1": "abran",
+        "dependName2": "haran",
+        "dependDOB1": "1977-06-06T18:30:00.000Z",
+        "dependDOB2": "1954-11-10T18:30:00.000Z",
+        "id": 2
+      },
+      "dateOfAdmission": "2022-09-12T18:30:00.000Z",
+      "dateOfDischarge": "2022-10-02T18:30:00.000Z",
+      "Amount": 1000000,
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
